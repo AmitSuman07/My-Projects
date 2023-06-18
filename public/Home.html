@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NareshIT-Home</title>
+    <link rel="shortcut icon" href="./Images/logo.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+                @keyframes animate {
+            from {
+                color:yellow;
+            }
+            to {
+                color:red;
+            }
+        }
+        .register{
+            animation-name: animate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex bg-white justify-content-between">
+        <img src="./Images/nareshit.PNG" width="400px" height="150px" class="p-3" >
+        <div class="p-4">
+            <h5 class="text-center">Folllow us on ...... </h5>
+            <button class="bi bi-facebook btn btn-primary"></button>
+            <button class="bi bi-instagram btn btn-primary"></button>
+            <button class="bi bi-linkedin btn btn-primary"></button>
+            <button class="bi bi-twitter btn btn-primary"></button>
+            <button class="bi bi-youtube btn btn-primary"></button>
+        </div>
+    </header>
+    <section class="w-100">
+        <main>
+            <div class="navbar navbar-dark bg-dark navbar-expand-lg rounded-1">
+                <div class="container-fluid">
+                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+            <div class="btn btn-toolbar navbar-collapse collapse bg-dark d-flex justify-content-around">
+                <ul class="navbar-nav" id="menu">
+                 <li class="nav-item active"><a href="Home.html"class="nav-link bi bi-house active"> Home</a></li>
+                 <li class="nav-item"><a href="about.html" class="nav-link bi bi-info"> About</a></li>
+                 <li class="nav-item"><a href="cources.html" class="nav-link bi bi-card-list"> Courses</a></li>
+                 <li class="nav-item"><a href="servives.html" class="nav-link bi bi-list"> Services</a></li>
+                 <li class="nav-item"><a href="contactus.html" class="nav-link bi bi-phone"> Contact us</a></li>
+                </ul>
+                <div class="input-group">
+                    <input type="text" placeholder="Search Courses" class="form-control">
+                    <button class="btn btn-primary">
+                        <span class="bi bi-search"></span>
+                    </button>
+                </div>
+                <div class="dropdown pt-1">
+                        <button data-bs-toggle="dropdown" class="btn btn-dark dropdown-toggle">
+                            <span class="bi bi-person-fill"></span>
+                            Sign in
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item" data-bs-toggle="modal" data-bs-target="#login"> <span class="dropdown-item-text bi bi-box-arrow-in-right"> Signin</span> </li>
+                            <li class="dropdown-item" data-bs-toggle="dropdown-menu"> <span class="dropdown-item-text bi bi-person-plus"><a href="./Signup.html" class="text-decoration-none text-white">Signup</a></span> </li>
+                            <li class="dropdown-item" data-bs-toggle="dropdown-menu" > <span class="dropdown-item-text bi bi-unlock"><a href="./Changepassword.html" class="text-decoration-none text-white">Change Passsword</a></span> </li>
+                        </ul>
+                </div>
+            </div> 
+           </div>  
+        </main>
+        <div class="modal fade" id="login">
+            <div  class="modal-dialog modal-dialog-centered d-flex w-50">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="bi bi-person-fill">Please Login to your Account</h3>
+                        <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="pb-2">
+                            <label class="form-label">Email id:</label>
+                            <div class="input-group">
+                                <span class="bi bi-person-fill p-2 text-white bg-primary"></span><input type="email" class="form-control" placeholder="Email address">
+                            </div>
+                            <label class="form-label">Password</label>
+                            <div class="input-group">
+                                <div class="bi bi-key p-2 text-white bg-primary"></div><input type="password" class="form-control" placeholder="Email address">
+                            </div>
+                            <div class="form-switch pt-2">
+                                <input type="checkbox" class="form-check-input"><label class="form-check-label"> Keep me sign in</label>
+                                </div>
+                        </form>
+                        <div class="modal-footer">
+                            <button class="btn btn-success w-100" >Sign in</button>
+                            <a href="#">Need Help?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel slide carousel-dark" id="topBanner" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../public/Images/aws.jpg" class="w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../public/images/dj.jpg" class="w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../public/images/ms.jpg" class="w-100">
+                </div>
+                 <div class="carousel-item">
+                    <img src="../public/images/spring.jpg" class="w-100">
+                </div>
+                 <div class="carousel-item">
+                    <img src="../public/images/ui.jpg" class="w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#topBanner">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#topBanner">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+    
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#topBanner" data-bs-slide-to="0"></button>
+                <button data-bs-target="#topBanner" data-bs-slide-to="1"></button>
+                <button data-bs-target="#topBanner" data-bs-slide-to="2"></button>
+                <button data-bs-target="#topBanner" data-bs-slide-to="3"></button>
+                <button data-bs-target="#topBanner" data-bs-slide-to="4"></button>
+            </div>
+        </div>
+        <div class="row w-100">
+            <div class="col" style="padding-left: 100px; margin-top: 150px;">
+                <span class="bi bi-shield-fill-check tect-blue fs-4"></span><span class="fw-bold">Most trusted education platform</span>
+                <h1 class="fw-bold pt-4 pb-4 text-success ">Grow your skills and <br> advance career with NareshIT</h1>
+                <p class="text-justify ">It is a long established fact that a student will be distracted by the number of software training institutes when looking for the best classroom and online training in hyderabad and chennai.</p>
+                <h4 class="register">REGISTER NOW !!!</h4>
+                <button class="btn btn-primary">REGISTER</button>
+            </div>
+            <div class="col" style="padding-left: 150px; margin-top: 100px;">
+                <img src="../public/Images/girl-image.png">
+            </div>
+        </div>
+    
+        <div>
+            <h3 class="text-center p-4">Student Department Details</h3>
+            <div class="row pt-4 d-flex justify-content-center align-items-center text-center " style="margin-left: 100px; margin-right: 100px;">
+                <div class="col border-top border-bottom border-2" style="padding: 40px;">
+                   <div class="bi bi-currency-rupee fs-1 text-warning"></div>
+                    Average Salary Offered <br>
+                    <h5 class="pt-4">INR 7 L per annum <br>
+                        per annum</h5>
+                </div>
+                <div class="col border border-2" style="padding: 40px;">
+                    <div class="bi bi-arrow-repeat fs-1 text-danger"></div>
+                    Duration <br>
+                    <h5 class="pt-4">
+                    2 <br> years
+                    </h5>
+                </div>
+                <div class="col border-top border-bottom border-end border-2" style="padding: 40px;">
+                    <div class="bi bi-hand-thumbs-up fs-1 text-success"></div>
+                    Average Fees Incurred <br>
+                   <h5 class="pt-4"> INR 25,000 - 2 L <br>
+                    per annum</h5>
+                </div>
+                <div class="col border-top border-bottom border-2" style="padding: 40px;">
+                    <div class="bi bi-flag fs-1 text-primary"></div>
+                    Indian Institute of Technology, [IIT] Kanpur <br>
+                    <h5 class="pt-4">49,035
+                        Kanpur</h5>
+                </div>
+            </div>
+        </div>
+        <div style="padding-top: 50px ;">
+            <h3 class="text-center p-4">What is the job</h3>
+            <div class="row p-3">
+                <div class="col" >
+                    <div class="bi bi-keyboard fs-1"></div>
+                    <h5>Types of jobs</h5>
+                    <ul>
+                        <li>Volcanologist. ...</li>
+                        <li>Quantum physicist. ...</li>
+                        <li>Oceanographer. ...</li>
+                        <li>Biomedical engineer. ...</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="bi bi-file-earmark-word fs-1 text-danger"></div>
+                    <h5>Define job profile</h5>
+                    <p>Job profile developed by the personnel department of a business might include such things as job responsibilities, required qualifications, advancement prospects.</p>
+                </div>
+                <div class="col">
+                    <div class="bi bi-wordpress fs-1 text-success"></div>
+                    <h5>Job profile summary</h5>
+                    <p>Profile summary is a summary of your education, skills, career experiences, and goals.</p>
+                </div>
+                <div class="col">
+                    <div class="bi bi-laptop fs-1 text-info"></div>
+                    <h5>The IT skills</h5>
+                    <ul>
+                        <li> Coding.</li>
+                        <li>Communication.</li>
+                        <li>Networks.</li>
+                        <li>Time Management.</li>
+                        <li> More Information Technology Skills.</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="bi bi-pc-display fs-1 text-warning"></div>
+                    <h5>Freshers key skills</h5>
+                    <ul>
+                        <li>Communication.</li>
+                        <li>to Work Under Pressure.</li>
+                        <li>Decision Making.</li>
+                        <li>Time Management.</li>
+                        <li> Self-motivation.</li>
+                        <li>Conflict Resolution.</li>
+                        <li>personal skills?</li>
+                        <li>Leadership.</li>
+                        <li>Adaptability.</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="bi bi-person-lines-fill fs-1 text-primary "></div>
+                    <h5>Personal skills</h5>
+                    <p>A skill is the ability to do something well, a certain competence or proficiency. Skills are typically acquired or developed through direct experiences and training, and they can require sustained effort.</p>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center"> Frequently Asked Questions (FAQ's) </h2>
+        <div class="accordion" id="faq">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="btn btn-dark w-100 fw-bold" data-bs-toggle="collapse" data-bs-target="#q1">Why do you want this job?</button>
+                </div>
+                <div class="accordion-collapse collapse " id="q1" data-bs-parent="#faq">
+                    <div class="accordion-body bg-dark bg-gradient text-white">
+                    <div class="row">
+                        <div class="col-4 "><img src="./Images/thinking.jpg" width="100%" height="250px" class="rounded-3"></div>
+                        <p class="col-8 d-flex justify-content-center align-items-center">The hiring manager wants to: Learn about your career goals and how this position fits into your plan. Make sure that you are sincerely interested in the job and will be motivated to perform if hired. Find out what you know about the company, industry, position (and if you took the time to research).
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="btn btn-dark w-100 fw-bold" data-bs-toggle="collapse" data-bs-target="#q2">What is a CV example?</button>
+                </div>
+                <div class="accordion-collapse collapse" id="q2" data-bs-parent="#faq">
+                    <div class="accordion-body bg-dark bg-gradient text-white">
+                       <div class="row">
+                        <p class="col-8 d-flex justify-content-center align-items-center">A resume is a brief summary. ... If you were writing your resume you would include only the work information that relates specifically to the job you're applying for, but for a Curriculum Vitae, you would also include all your teaching experience, lab and field work..</p>
+                        <div class="col-4 text-center"><img src="./Images/cv.jfif" width="100%" height="250px" class="rounded-3"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="btn btn-dark w-100 fw-bold" data-bs-toggle="collapse" data-bs-target="#q3">Do you need a resume for your first job?</button>
+                </div>
+                <div class="accordion-collapse collapse" id="q3" data-bs-parent="#faq">
+                    <div class="accordion-body bg-dark bg-gradient text-white" >
+                   <div class="row">
+                   <div class="col-4 "><img src="./Images/job.jpg" width="100%" height="250px" class="rounded-3"></div>
+                    <p class="col-8 d-flex justify-content-center align-items-center">When writing your first resume with no work experience, it's appropriate to include casual jobs like babysitting, pet sitting, lawn mowing, and shoveling snow. All experience counts and the way you present yourself, your skills, and your assets to a hiring manager begins with a strong resume.</p>
+                   </div>               
+                 </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="btn btn-dark w-100 fw-bold" data-bs-toggle="collapse" data-bs-target="#q4"> Why do you think you can do well in this job?</button>
+                </div>
+                <div class="accordion-collapse collapse" id="q4" data-bs-parent="#faq">
+                    <div class="accordion-body bg-dark bg-gradient text-white">
+                    <div class="row">
+                        <p class="col-8 d-flex justify-content-center align-items-center"> I believe I will do well in this job because I have the relevant skills and it is my field of interest. ... I have a confident that I can do well in the job because of self confidence, positive attitude. Previous success also brings self confidence for the future success.</p>
+                        <div class="col-4"><img src="./Images/images.jfif" width="100%" height="250px" class="rounded-3"></div>
+                    </div>               
+                 </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside>
+       <button class="btn btn-primary position-fixed bottom-0 end-0"><span class="bi bi-headset"></span> Need Help?</button>
+    </aside>
+    <footer class="bg-dark text-white">
+        <div class="row p-2 pt-3 m-2">
+            <div class="col text-justify">
+                <h5>ABOUT NARESH ITECHNOLOGIES</h5>
+                <hr>
+                <p>Training Institute Overview Naresh i Technologies Naresh i Technologies (Pronounced: NareshIT) is a leading software training institute providing Software Training, Project Guidance, IT Consulting and Technology Workshops. Using our enhanced global software training delivery methodology,</p>
+            </div>
+            <div class="col">
+                <h5>INTERVIEW QUESTIONS</h5>
+                <hr>
+                <ul>
+                    <li>DevOps Interview Questions</li>
+                    <li>AngularJS Interview Questions</li>
+                    <li>Java Interview Questions</li>
+                    <li>HTML Interview Questions</li>
+                    <li>JavaScript Interview Questions</li>
+                    <li>Advanced Java Interview Questions</li>
+                </ul>
+            </div>
+            <div class="col text-justify">
+                <h5>HYDERABAD MAIN CAMPUS</h5>
+                <hr>
+                <p>Add: 2nd Floor, Durga Bhavani Plaza,
+                    Ameerpet, Hyderabad
+                    Ph : 040-2374 6666 / 2373 4842
+                    Email : support@nareshit.com</p>
+                    
+                    <p>For Online Training:</p>
+                    
+                    <p>Call/Whatsapp:  +91-8179191999
+                    Email: onlinetraining@nareshit.com</p>
+            </div>
+            <div class="col ">
+                <h5>FOLLOW US ON SOCIAL MEDIA</h5>
+                <hr>
+                <div>
+                    <button class="bi bi-facebook btn btn-outline-danger"></button>
+                    <button class="bi bi-instagram btn btn-outline-danger"></button>
+                    <button class="bi bi-linkedin btn btn-outline-danger"></button>
+                    <button class="bi bi-twitter btn btn-outline-danger"></button>
+                    <button class="bi bi-youtube btn btn-outline-danger"></button>
+                </div>
+                <br>
+                <h5>JOIN OUR TELEGRAM – GET UPDATES</h5>
+                <hr>
+                <ul>
+                    <li>NareshIT Official Channel</li>
+                    <li>Python | JAVA | AWS | DevOps |  Data Science</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="pb-3 ms-4">© 2023 Naresh i Technologies | Software Training - Online Training - Live Project Training - Weekend Training</p>
+    </footer>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html> 
