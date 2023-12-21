@@ -1,0 +1,198 @@
+
+html, body{
+    height: 100%;
+    width:100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .grass, .sky, .road{
+    position: relative;
+  }
+  
+  .sky{
+    height: 40%;
+    background: skyblue;
+  }
+  
+  .grass{
+    height: 30%;
+    background: seagreen;
+  }
+  
+  .road{
+    height: 30%;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100%;
+  }
+  
+  .lines{
+    box-sizing: border-box;
+    border: 8px dashed white;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    animation: line 50ms alternate infinite;
+  }
+  @keyframes line {
+    from{ margin-left: 5px;}
+    to{
+        margin-left: 0px;
+    }
+    
+  }
+  .mario{
+      position: relative;
+      top: -200px;
+      animation: mario 50ms alternate infinite;
+      animation: drive 3s alternate infinite;
+  }
+  .luigi{
+      position: relative;
+      top: -110px;
+      animation: mario 50ms alternate infinite;
+      animation: drive 3s alternate infinite; 
+      animation-delay: 2s; 
+  }
+  .flag{
+      height: 250px;
+      position: relative;
+      top: -250px;
+      animation: flag 10s linear  reverse infinite;
+  }
+  .pipe{
+      height: 150px;
+      position: relative;
+      margin-left: 90px;
+      animation: pipe 10s linear  reverse infinite;
+  }
+  
+  .fronttrees{
+      position: absolute;
+      animation: ftree 10s linear  reverse infinite;
+      top: -8px;
+      padding-left:400px;
+  }
+  .fronttrees img {
+      margin-right: 300px;
+  }
+  
+  .backtrees{
+      margin-right: 300px ;
+      position: relative;
+      top: -80px;   
+  }
+  .tree1{
+  
+      animation: btree 12s linear  reverse infinite;
+  
+  }
+  .tree2{
+      top: 40px;
+  
+      animation: btree 8s linear reverse infinite;
+  
+  }
+  .tree3{
+      top: -40px;
+      animation:btree 15s linear  reverse infinite;
+  
+  }
+  .tree4{
+      top: 80px;
+      animation: btree 9s linear  reverse infinite;
+  
+    
+  }
+  .backtrees img{
+      position: relative;
+      
+  }
+  .cloud{
+      margin-right: 300px ;
+  
+  
+  }
+  .cloud1{
+      position: relative;
+      animation: ftree 20s linear  reverse infinite;
+      margin-right: 100px;
+      top: -50px;
+    
+  }
+  .cloud2{
+      animation: ftree 18s linear  reverse infinite;
+  
+  }.cloud3{
+      animation: ftree 15s linear  reverse infinite;
+      margin-right: 100px;
+      position: relative;
+      top:60px;
+  }
+  .cloud4{
+      animation: ftree 12s  reverse infinite;
+  }
+  .cloud5{
+      animation: ftree 9s linear  reverse infinite;
+      
+  }
+  @keyframes pipe {
+      from{
+         transform: translateX(-1300px);
+      }
+      to{
+          transform: translateX(1400px);
+      }
+  }
+  @keyframes flag {
+      from{
+         transform: translateX(-300px);
+      }
+      to{
+          transform: translateX(1400px);
+      }
+  }
+  @keyframes ftree {
+      from{
+         transform: translateX(-1200px);
+      }
+      to{
+          transform: translateX(1400px);
+      }
+  }
+  @keyframes btree {
+      from{
+         transform: translateX(-300px);
+      }
+      to{
+          transform: translateX(1400px);
+      }
+  }
+  
+  @keyframes mario {
+      from{
+          transform: translateX(0px);
+          transform: translateY(3px);
+      }
+      to{
+          transform: translateX(500px);
+          transform: translateY(0px);
+      }
+  }
+  @keyframes drive {
+      from{
+          transform: translateX(0px);
+  
+      }
+      to{
+          transform: translateX(500px);
+  
+      }
+  }
+  
+  
+  

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("./img/star.avif");
+        background-size: cover;
+    }
+
+    .bell {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        border-bottom: 250px solid goldenrod;
+        border-radius: 30%;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        animation: bell 2s alternate-reverse infinite;
+        animation-timing-function: ease-in-out;
+        filter: drop-shadow(10px 10px 20px goldenrod )
+        drop-shadow(-0px -20px 100px  goldenrod);
+    }
+
+
+    @keyframes bell {
+        0% {
+            transform: rotate(20deg);
+        }
+
+        100% {
+            transform: rotate(-20deg);
+        }
+    }
+
+    .ball {
+
+        background-color: goldenrod;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+
+    }
+
+
+    .container {
+        position: absolute;
+        top: -50px;
+        left: -80px;
+        border-bottom: 300px solid transparent;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        rotate: 180deg;
+        animation: ball 1.5s alternate-reverse ease-in-out infinite;
+        filter:  drop-shadow(0px -10px 150px goldenrod)
+        drop-shadow(0px -20px 100px goldenrod);
+    }
+    @keyframes ball {
+        0% {
+            transform: rotate(40deg);
+
+        }
+
+        100% {
+            transform: rotate(-40deg);
+        }
+    }
+    h1{
+        color: rgb(107, 92, 4);
+        font-size: 100px;
+        animation: textcolor 3s alternate infinite;
+    }
+    @keyframes textcolor {
+        0%{
+            color: rgb(143, 121, 0);
+           text-shadow: none;
+        }
+        50%{
+            color: red;
+            text-shadow:0 0 10px red,
+            0 0 20px red,
+            0 0 40px red,
+            0 0 60px red,
+            0 0 100px red;
+        }
+        75%{
+            color: orange;
+            text-shadow:0 0 10px orange,
+            0 0 20px orange,
+            0 0 40px orange,
+            0 0 60px orange,
+            0 0 100px orange;
+        }
+
+        100%{
+            color: yellow;
+            text-shadow: 0 0 10px yellow,
+            0 0 20px yellow,
+            0 0 40px yellow,
+            0 0 60px yellow,
+            0 0 100px yellow;   
+        }
+    }
+</style>
+
+<body>
+    <div class="bell">
+        <div class="container">
+            <div class="ball"></div>
+        </div>
+    </div>
+    <div>
+        <h1>MERRY CHRISTMAS</h1>
+    </div>
+    
+</body>
+</html>
